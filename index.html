@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <form action="">
+
+            <div class="amount">
+                <p>Enter the amount</p>
+                <input type="number" value="1">
+            </div>
+            <div class="selector">
+                <div class="from">
+                    <p>from</p>
+                    <div class="select_container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                    </div>
+                    <select name="from" >
+                        
+                    </select>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>to</p>
+                    <div class="select_container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                    </div>
+                    <select name="to" >
+                        
+                    </select>
+                </div>
+            </div>    
+
+
+        </form>
+        <div class="msg">
+            <h3>1USD = 80INR</h3>
+        </div>
+        <button class="btn">Get exchange rate</button>
+
+            
+        
+    </div>
+    
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
