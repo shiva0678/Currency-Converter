@@ -5,6 +5,7 @@ let button = document.querySelector("button");
 let fromCountry = document.querySelector(".from select ");
 let toCountry = document.querySelector(".to select");
 let msg = document.querySelector(".msg h3")
+let exchange = document.querySelector("#exchange-icon")
 
 
 
@@ -60,4 +61,12 @@ const displayRate = async () => {
 
     msg.innerText=`${amtval} ${fromCountry.value} = ${newValue} ${toCountry.value}`;
 }
+exchange.addEventListener("click",()=>{
+    const temp = fromCountry.value;
+    fromCountry.value = toCountry.value;
+    toCountry.value = temp;
+    updateFlag(fromCountry);
+    updateFlag(toCountry);
+    displayRate();
+})
 
